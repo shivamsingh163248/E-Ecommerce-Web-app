@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer Chatbot</title>
+
+    <!--css file link-->
+    <link rel="stylesheet" href="./chatbot.css">
+
+
+    <!-- font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="desc">
+
+            <h1 class="text"> Chatbot</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis libero nam delectus nostrum at
+                voluptates culpa officia ullam quia? Quidem illo pariatur exercitationem. Nobis unde qui tempora rem
+                adipisci similique.</p>
+            <button id="init">START CHAT</button>
+        </div>
+        <div>
+            <img src="/chatbot-data.png" alt="" class="bot-img">
+        </div>
+    </div>
+
+    <div id="test" style="position: fixed; bottom: 4rem; right: 8rem; display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="/chatbot-1.png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">Chatbot</span>
+                        <br>
+                        <span style="color:lawngreen">online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat"></i></button>
+                </div>
+            </div>
+            <div id="chat-box">
+
+            </div>
+            <div class="footer">
+                <span>powered by @e-commerce</span>
+            </div>
+        </div>
+    </div>
+
+    <!--javascript file link-->
+    <script src="/chatbot.js"></script>
+
+</body>
+
+</html>
