@@ -1,58 +1,68 @@
 var data = {
     chatinit: {
         title: ["Hello <span class='emoji'> &#128075;</span>", "I am Mr. Chatbot", "How can I help you?"],
-        options: ["Movies <span class='emoji'> &#128250;</span>", "News", "Shopping <span class='emoji'> &#128090;</span>", "Music <span class='emoji'> &#127925;</span>"]
+        options: ["Services <span class='emoji'> &#128224;</span>", "Check Status <span class='emoji'> &#128221;</span>", "Shopping <span class='emoji'> &#128092;</span>", "Contact us <span class='emoji'> &#128222;</span>"]
 
     },
-    movies: {
+    services: {
         title: ["Please select category"],
-        options: ['Hollywood', 'Bollywood', 'Web Series', 'Others'],
+        options: ['LCD', 'Repairing Phone', 'Display Change','Change IC', 'Others'],
         url: {
         }
     },
-    news: {
-        title: ["Today's Top 5 Headlines"],
-        options: ["The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.", "The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.", "The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA."],
+    check: {
+        title: ["Check your phone status"],
+        options: ["First enter your token number", "Enter your brand name", "Enter your model name","Now click on  enter"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
     shopping: {
-        title: ["Please choose shopping category <span class='emoji'> &#128090;</span>"],
-        options: ['Electronics', 'Beauty products', 'Dresses'],
+        title: ["Please choose shopping category <span class='emoji'> &#128092;</span>"],
+        options: ['LCD', 'Charger', 'headphones'],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
-    music: {
-        title: ["These are some latest songs <span class='emoji'> &#127925;</span>"],
-        options: ["song 1", "song 2", "song 3", "song 4", "song 5"],
+    contact: {
+        title: ["Pick the phone number <span class='emoji'> &#128222;</span>"],
+        options: ["7347821882", "6393474051", "6391288298", "priyeshm845@gmail.com", "shivamsingh163248@gmail.com"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
-    hollywood: {
-        title: ["These are some latest hollywood movies to watch", "Click on movies to know more"], options: ["Movies 1", "Movies 2", "Movies 3", "Movies 4"],
+    lcd: {
+        title: ["An LCD is a type of display that uses liquid crystals to produce an image.", "Click on options"], 
+        options: ["Professional LCD Screens", "Window LCD Displays", "Digital Signage Displays", "Interactive Touchscreen Displays"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
 
         }
     },
-    bollywood: {
-        title: ["These are some latest bollywood movies to watch"],
-        options: ["Movies 1", "Movies 2", "Movies 3", "Movies 4"],
+    repairing: {
+        title: ["Fast, Reliable Phone Repair You Can Trust"],
+        options: ["Display change", "IC change", "chargering pot", "Glass"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
-    web: {
-        title: ["These are some latest web series to watch"],
-        options: ["Web series 1", "Web series 2", "Web series 3", "Web series 4"],
+    display: {
+        title: ["Unbreakable Brilliance the Future of Phone Displays"],
+        options: ["LED Display", "OLED Display", "AMOLED Display","TFT-LCD Display"],
+        url: {
+            more: "https://www.youtube.com/@webhub/videos",
+            link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
+        }
+    },
+
+    change: {
+        title: ["Product listing for a phone model with the IC change"],
+        options: ["Processor upgrade", "New image sensor", "Increased memory", "Other specific IC alteration"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
@@ -60,7 +70,7 @@ var data = {
     },
     others: {
         title: ["Here are some more options for you"],
-        options: ["YouTube", "Netflix", "Amazon Prime", "Hot Star"],
+        options: ["coming soon", "coming soon", "coming soon", "coming soon"],
         url: {
             more: "https://www.youtube.com/",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
@@ -70,6 +80,8 @@ var data = {
 
 document.getElementById("init").addEventListener("click", showChatBot);
 var cbot = document.getElementById("chat-box");
+
+
 
 var len1 = data.chatinit.title.length;
 
@@ -178,7 +190,7 @@ function handleOptions(options, url) {
     var inp = '<a class="m-link" href="' + moreLink + '">' + ' See more</a>';
 
     opt.innerHTML = inp;
-    opt.setAttribute("class", "opt link");
+    opt.setAttribute("class", "opt chat_link");
     cbot.appendChild(opt);
     handleScroll();
 }

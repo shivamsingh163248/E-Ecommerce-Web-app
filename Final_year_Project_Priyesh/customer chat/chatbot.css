@@ -9,7 +9,7 @@ body {
     transition: 1s all ease-in-out;
 }
 
-#init {
+.chatbot_start #init {
     margin-top: 2rem;
     background: indianred;
     border: none;
@@ -23,21 +23,21 @@ body {
 
 }
 
-.desc p {
+.chatbot_start .desc p {
     color: rgb(133, 153, 168);
     margin: 0;
     font-weight: 600;
 
 }
 
-.text {
+.chatbot_start .text {
     font-size: 65px;
     font-weight: 800;
     color: cadetblue;
     margin: 0;
 }
 
-.parent {
+.chatbot_start .parent {
     position: relative;
     height: 100%;
     padding: 0 7rem;
@@ -47,22 +47,22 @@ body {
 
 }
 
-.bot-img {
+.chatbot_start .bot-img {
     width: 20rem;
     height: 20rem;
 
 }
 
-.child {
+.chatbot_archtecture .child {
     box-shadow: 0 0 2px salmon;
     border-radius: 15px;
     height: 30rem;
-    width: 16rem;
+    width: 24rem;
     margin: auto;
     background: white;
 }
 
-.header img {
+.chatbot_archtecture .header img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -72,14 +72,14 @@ body {
 
 }
 
-.header {
+.chatbot_archtecture .header {
     position: absolute;
     top: 0;
     display: flex;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
     background: white;
-    width: 16rem;
+    width: 24rem;
     padding: 5px 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -88,18 +88,18 @@ body {
 
 }
 
-.h-child {
+.chatbot_archtecture .h-child {
     display: flex;
     align-items: center;
 }
 
-.header span {
+.chatbot_archtecture .header span {
     font-size: 13px;
     margin: 0;
     padding: 0;
 }
 
-.refBtn {
+.chatbot_archtecture .refBtn {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -112,14 +112,14 @@ body {
 
 }
 
-.name {
+.chatbot_archtecture .name {
     font-weight: 600;
 }
 
-.footer {
+.chatbot_archtecture .footer {
     position: absolute;
     bottom: 0;
-    width: 16rem;
+    width: 24rem;
     background: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -130,7 +130,7 @@ body {
     box-shadow: 0 0 3px rgb(153, 153, 153);
 }
 
-#chat-box {
+.chatbot_archtecture #chat-box {
     position: relative;
     top: 40px;
     padding: 8px 10px;
@@ -189,7 +189,7 @@ body {
 
 }
 
-.link {
+.chat_link {
     text-decoration: none;
     display: block;
     text-align: center;
