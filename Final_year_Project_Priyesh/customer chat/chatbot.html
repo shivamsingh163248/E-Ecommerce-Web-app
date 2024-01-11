@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div class="chatbot_start">
     <div class="parent">
         <div class="desc">
 
@@ -26,15 +27,16 @@
             <button id="init">START CHAT</button>
         </div>
         <div>
-            <img src="/chatbot-data.png" alt="" class="bot-img">
+            <img src="./chatbot-data.png" alt="" class="bot-img">
         </div>
     </div>
-
+    </div>
+    <div class="chatbot_archtecture">
     <div id="test" style="position: fixed; bottom: 4rem; right: 8rem; display: none;">
         <div class="child" id="chatbot">
             <div class="header">
                 <div class="h-child">
-                    <img src="/chatbot-1.png" alt="avatar" id="avatar">
+                    <img src="./chatbot-1.png" alt="avatar" id="avatar">
                     <div>
                         <span class="name">Chatbot</span>
                         <br>
@@ -42,7 +44,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat"></i></button>
+                    <button class="refBtn"><i class="fa fa-refresh"  onclick="initChat"></i></button>
                 </div>
             </div>
             <div id="chat-box">
@@ -53,9 +55,10 @@
             </div>
         </div>
     </div>
+    </div>
 
     <!--javascript file link-->
-    <script src="/chatbot.js"></script>
+    <script src="chatbot.js"></script>
 
 </body>
 
