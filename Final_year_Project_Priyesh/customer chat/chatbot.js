@@ -76,7 +76,11 @@ var data = {
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
+
 }
+
+
+
 
 document.getElementById("init").addEventListener("click", showChatBot);
 var cbot = document.getElementById("chat-box");
