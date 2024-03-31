@@ -344,9 +344,9 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1216,17 +1216,17 @@ Page Heading
 }
 
 .page-heading .top-text h6 {
-  color: #fff;
+  color: #000000;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 .page-heading .top-text h2 {
-  color: #fff;
+  color: #000000;
   line-height: 70px;
   font-size: 45px;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: capitalize;
   margin-top: 15px;
 }
@@ -1252,8 +1252,8 @@ Category Post
 
 .category-post .icon {
   display: inline-block;
-  width: 66px;
-  height: 66px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
   line-height: 62px;
@@ -1276,7 +1276,7 @@ Category Post
 }
 
 .category-post .icon img {
-  max-width: 27px;
+  max-width: 50px;
 }
 
 .category-post .naccs .menu div.first-thumb  {
@@ -1396,14 +1396,14 @@ Category Post
 
 .category-post .top-content .top-icon h4 {
   position: absolute;
-  left: 30px;
+  left: 50px;
   top: 50%;
   color: #fff;
   transform: translateY(-50%);
   font-size: 15px;
   font-weight: 400;
   width: 100%;
-  display: inline;
+  display: block;
 }
 
 .category-post .top-content .top-icon .icon {
@@ -1457,8 +1457,8 @@ Listing Page
 
 .listing-page .icon {
   display: inline-block;
-  width: 66px;
-  height: 66px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   text-align: center;
   line-height: 62px;
@@ -1468,7 +1468,7 @@ Listing Page
 }
 
 .listing-page .icon img {
-  max-width: 27px;
+  max-width: 50px;
 }
 
 .listing-page .naccs .menu div.first-thumb {
@@ -1663,6 +1663,29 @@ Listing Page
   height: 14px;
 }
 
+.price p{
+  text-decoration: line-through;
+  display: inline;
+}
+
+.mydiscountfield{
+  font-weight: 600;
+  color:#00FF00;
+}
+
+.right-content .myitemproductimg{
+  width:250px !important;
+  height:250px !important;
+  display: block;
+  float: right;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  /* Adjust the margin as needed */
+  margin-right: 30px;
+  padding-bottom: 20px;
+
+}
 
 
 /* 
