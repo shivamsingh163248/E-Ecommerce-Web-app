@@ -22,7 +22,7 @@ var data = {
         title: ["Please choose shopping category <span class='emoji'> &#128092;</span>"],
         options: ['LCD', 'Charger', 'headphones'],
         url: {
-            more: "https://www.youtube.com/@webhub/videos",
+            more: "https://amzn.eu/d/aYO4hWq",
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
@@ -39,7 +39,7 @@ var data = {
         options: ["Professional LCD Screens", "Window LCD Displays", "Digital Signage Displays", "Interactive Touchscreen Displays"],
         url: {
             more: "https://www.youtube.com/@webhub/videos",
-            link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
+            link: ["https://amzn.eu/d/eOI0Trw", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
 
         }
     },
@@ -76,7 +76,11 @@ var data = {
             link: ["https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos", "https://www.youtube.com/@webhub/videos"]
         }
     },
+
 }
+
+
+
 
 document.getElementById("init").addEventListener("click", showChatBot);
 var cbot = document.getElementById("chat-box");
