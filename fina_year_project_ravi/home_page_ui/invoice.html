@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>invoice</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!--internal css for invoice content-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .myinvoicecontent {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .mybuttoninvoice {
+            width: 130px;
+            height: 25px;
+            background-color: skyblue;
+            font-weight: 600;
+            color: black;
+            margin-top: 10px;
+        }
+
+        .footersectioninvoice {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container" style="background-color: lightgray;">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/../../index.html" class="logo">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+
+
+                            <li><a href="/../../index.html" class="active">Home</a></li>
+                            <li><a href="http://localhost:8080/">Category</a></li>
+                            <li><a href="http://localhost:8080/register">Service</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li>
+                                <div class="main-white-button"><a
+                                        href="../../Final_year_Project_Priyesh/customer chat/chatbot.html"><i
+                                            class="fa fa-plus"></i> Customer Support</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Invoice content-->
+
+    <div class="myinvoicecontent">
+        <div>
+            <h1>Invoice</h1>
+            <h4 id="invoiceNumber" style="font-size: 18px; font-weight: 500;"></h4>
+            <h4 style="font-size: 18px; font-weight: 500;">Lovely Mobile Center</h4>
+            <h4 style="font-size: 18px; font-weight: 500;">Address:</h4>
+            <span style="font-size: 18px; font-weight: 500;">Uttar Pradesh</span>
+            <br>
+            <span style="font-size: 18px; font-weight: 500;">India</span>
+            <br>
+            <span style="font-size: 18px; font-weight: 500;">Pin No:222001</span>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Quatity</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Product 1</td>
+
+                    <td rowspan="5"> 1</td>
+                    <td>Rs 999.00</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+
+                    <td>Rs 149.85</td>
+                </tr>
+
+                <tr>
+                    <td>Net Amount</td>
+
+                    <td>Rs 849.15</td>
+                </tr>
+
+                <tr>
+                    <td>CGST</td>
+
+                    <td>Rs 42.45 </td>
+                </tr>
+                <tr>
+                    <td>SGST</td>
+
+                    <td>Rs 42.45 </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="total"><b>Total Amount</b></td>
+                    <td>Rs 934.05</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footersectioninvoice">
+            <a href="http://127.0.0.1:5501/fina_year_project_ravi/home_page_ui/index.html"><button
+                    class="mybuttoninvoice">Back To Home</button></a>
+
+            <div class="col-lg-12">
+                <div class="sub-footer">
+                    <p>Copyright © 2021 Listing Co., Ltd. All Rights Reserved.
+                        <br>Design:E-commerce Web Team</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const invoicenumber = document.getElementById("invoiceNumber");
+        let x = Math.floor(Math.random() * 10);
+        let value = 12 * x;
+        let value2 = 11 * x;
+        let value3 = 13 * x;
+
+        let totalvalue = `Invoice Number :${value}${value2}${value3}`;
+        invoicenumber.textContent = totalvalue;
+    </script>
+
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
