@@ -17,4 +17,4 @@ jobs:
         server: ftp.lovelymobilecenter.store
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /home/u348475756/domains/lovelymobilecenter.store/public_html
+        server-dir: /home/u348475756/domains/lovelymobilecenter.store/public_html/
