@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email send</title>
+
+</head>
+
+<body>
+    <form class="form">
+
+        <label for="name"> Name:</label>
+        <input type="text" class="name" id="name" name="name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" class="email" id="email" name="email">
+        <br>
+        <br>
+        <label for="password"> Password:</label>
+        <input type="password" class="password" id="password" name="password">
+        <br>
+        <input name="enabled" type="checkbox" value="true">
+        <button type="submit">Submit</button>
+
+    </form>
+    <script>
+        const form1 = document.querySelector('.form');
+        form1.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const formData = new FormData(form1);
+            const data = Object.fromEntries(formData);
+            console.log(data);
+            fetch('', {
+                method: 'POST',
+                headers:{
+                   'content-Type':'application/json' 
+                },
+                body: JSON.stringfy(data)
+            }).then(res =>res.json())
+              .then(data => console.log(data))
+              .catch(error => console.log(error));
+        });
+    </script>
+</body>
+
+</html>
