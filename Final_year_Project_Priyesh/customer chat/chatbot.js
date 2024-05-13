@@ -9,10 +9,10 @@ var data = {
         options: ['New & Trending', 'LCD', 'Laptop', 'Smartphone', 'Others'],
         url: {
             more: "https://www.amazon.in/",
-            link: ["http://127.0.0.1:5501/fina_year_project_ravi/home_page_ui/listing.html",
-                "http://127.0.0.1:5501/fina_year_project_ravi/home_page_ui/listing.html",
-                "http://127.0.0.1:5501/fina_year_project_ravi/home_page_ui/listing.html",
-                "http://127.0.0.1:5501/fina_year_project_ravi/home_page_ui/listing.html", "https://www.amazon.in/"]
+            link: ["https://lovelymobilecenter.store/fina_year_project_ravi/home_page_ui/listing.html",
+            "https://lovelymobilecenter.store/fina_year_project_ravi/home_page_ui/listing.html",
+                "https://lovelymobilecenter.store/fina_year_project_ravi/home_page_ui/listing.htmll",
+                "https://lovelymobilecenter.store/fina_year_project_ravi/home_page_ui/listing.html", "https://www.amazon.in/"]
         }
     },
     check: {
