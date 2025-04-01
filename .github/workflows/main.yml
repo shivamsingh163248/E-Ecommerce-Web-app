@@ -1,20 +1,20 @@
-on: 
-   push:
+on:
+  push:
     branches:
-      - main
+    - main
 name: Deploy website on push
 jobs:
   web-deploy:
-    name:  Deploy
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name:  Get latest code
+    - name: Get latest code
       uses: actions/checkout@v2
-    
+
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.vbspu.info
+        server: ftp.lovelymobilecenter.store
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /home/u348475756/domains/vbspu.info/public_html/
+        server-dir: /home/u348475756/domains/lovelymobilecenter.store/public_html/
